@@ -1,7 +1,7 @@
 ---
 title: "Análisis del Valor de Mercado de Jugadores FIFA 23"
 subtitle: "Proyecto Final - Métodos Lineales"
-author: "Tu Nombre"
+author: "Andres Schafler, Luis Maciel, Esteban, ..."
 date: "`r Sys.Date()`"
 output:
   html_document:
@@ -978,18 +978,6 @@ Depende del objetivo:
 
 5. **Outliers e influencia:** Jugadores "estrella" extremos (Mbappé, Haaland) tienen componentes únicos que el modelo no captura totalmente.
 
-## 8.4 Extensiones Futuras
-
-1. **Términos de interacción:** ¿El efecto de la edad depende del potencial? Podríamos probar `age * potential`.
-
-2. **No-linealidad:** Incluir términos cuadráticos (ej. `age + age²`) para capturar el efecto no lineal de la edad.
-
-3. **Modelos de aprendizaje automático:** Random forests, gradient boosting, redes neuronales podrían mejorar el poder predictivo.
-
-4. **Análisis de segmentos:** Construir modelos separados para delanteros, defensas, porteros, ya que pueden tener dinámicas de valoración diferentes.
-
-5. **Series temporales:** Analizar cómo ha cambiado el valor de los jugadores a lo largo de diferentes versiones de FIFA.
-
 ## 8.5 Mensaje Final
 
 Este análisis demuestra cómo los **métodos lineales** (regresión simple, múltiple, diagnósticos, variables categóricas, GLM) pueden usarse para contar una historia coherente y basada en datos. Hemos aprendido que:
@@ -1002,15 +990,7 @@ Este análisis demuestra cómo los **métodos lineales** (regresión simple, mú
 
 ---
 
-# Referencias
-
-- Dataset: FIFA 23 Players Data (Kaggle/SoFIFA)
-- Paquetes de R: `tidyverse`, `car`, `ggplot2`
-- Teoría: Apuntes del curso Métodos Lineales, ITAM
-
----
-
-**Proyecto elaborado por:** [Tu Nombre]
+**Proyecto elaborado por:** Andrés Schafler, Luis Maciel, Esteban, ...
 **Fecha:** `r Sys.Date()`
 **Curso:** Métodos Lineales - ITAM
 
