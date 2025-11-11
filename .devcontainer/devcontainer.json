@@ -4,7 +4,7 @@
 
 	"features": {
 		"ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
-			"packages": "tidyverse,rmarkdown,knitr,ggplot2,dplyr,readr"
+			"packages": "tidyverse,rmarkdown,knitr,ggplot2,dplyr,readr,corrplot,car,scales,gridExtra,tinytex"
 		}
 	},
 
@@ -23,7 +23,7 @@
 		}
 	},
 
-	"postCreateCommand": "R -e \"install.packages(c('tidyverse', 'rmarkdown', 'knitr', 'ggplot2', 'dplyr', 'readr'), repos='https://cloud.r-project.org/')\"",
+	"postCreateCommand": "apt-get update && apt-get install -y pandoc perl-modules-5.34 && R -e \"install.packages(c('tidyverse', 'rmarkdown', 'knitr', 'ggplot2', 'dplyr', 'readr', 'corrplot', 'car', 'scales', 'gridExtra', 'tinytex'), repos='https://cloud.r-project.org/'); tinytex::install_tinytex()\"",
 
 	"remoteUser": "root"
 }
