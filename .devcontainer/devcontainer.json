@@ -1,0 +1,29 @@
+{
+	"name": "R Development Environment",
+	"image": "rocker/r-ver:4.3",
+
+	"features": {
+		"ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
+			"packages": "tidyverse,rmarkdown,knitr,ggplot2,dplyr,readr"
+		}
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"REditorSupport.r",
+				"rdebugger.r-debugger",
+				"quarto.quarto"
+			],
+			"settings": {
+				"r.rterm.linux": "/usr/local/bin/R",
+				"r.bracketedPaste": true,
+				"r.plot.useHttpgd": true
+			}
+		}
+	},
+
+	"postCreateCommand": "R -e \"install.packages(c('tidyverse', 'rmarkdown', 'knitr', 'ggplot2', 'dplyr', 'readr'), repos='https://cloud.r-project.org/')\"",
+
+	"remoteUser": "root"
+}
